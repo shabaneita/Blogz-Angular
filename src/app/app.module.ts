@@ -17,7 +17,13 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import {MatInputModule} from '@angular/material/input';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { BlogAddComponent } from './blog-add/blog-add.component';
+import { BlogEditComponent } from './blog-edit/blog-edit.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
+import { HomeComponent } from './home/home.component'
 
 @NgModule({
   declarations: [
@@ -28,6 +34,12 @@ import {FormsModule} from '@angular/forms'
     UserDetailsListComponent,
     UserProfileComponent,
     NavBarComponent,
+    LoginComponent,
+    RegisterComponent,
+    BlogAddComponent,
+    BlogEditComponent,
+    UserEditComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
