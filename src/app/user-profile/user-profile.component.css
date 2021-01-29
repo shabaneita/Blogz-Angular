@@ -16,7 +16,7 @@
 }
 
 .blogs-container {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -25,3 +25,17 @@
   color: white
 }
 
+.bio {
+  width: 70%;
+  margin: 0 auto;
+}
+
+mat-icon {
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.bio-detail {
+  margin-top: .5em;
+  font-size: 1.25em;
+}
