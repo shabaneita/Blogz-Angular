@@ -1,30 +1,30 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <button mat-icon-button routerLink="">
     <mat-icon>home</mat-icon>
   </button>
   <span class="d-none d-lg-inline">ITI Blogz</span>
   <span class="spacer"></span>
   <span class="search">
     <mat-form-field class="example-form-field">
-      <input matInput type="text" [(ngModel)]="value" placeholder="Search">
+      <input #search matInput type="text" [(ngModel)]="value" placeholder="Search">
       <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <button mat-icon-button>
+    <button mat-icon-button [routerLink]="['search']" [queryParams]="{query: search.value}">
       <mat-icon>search</mat-icon>
     </button>
   </span>
   <span class="spacer"></span>
-  <button mat-button>
+  <button mat-button routerLink="login">
     Login
     <mat-icon>login</mat-icon>
   </button>
-  <button mat-button>
+  <button mat-button routerLink="register">
     Register
     <mat-icon>account_box</mat-icon>
   </button>
-  <button mat-icon-button>
+  <button mat-icon-button routerLink="profile">
     <div mat-card-avatar class="user-avatar"></div>
   </button>
   <button mat-button>
