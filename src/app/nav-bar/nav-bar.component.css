@@ -11,3 +11,8 @@
 mat-toolbar {
   padding: 2em 1em;
 }
+
+.user-avatar {
+  background-image: url('https://i.pinimg.com/originals/67/ba/d0/67bad059a577cf2dd2faf6f06abaf6e1.png');
+  background-size: cover;
+}
