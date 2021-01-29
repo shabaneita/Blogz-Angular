@@ -1,0 +1,27 @@
+
+.profile-image {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background-image: url('https://i.pinimg.com/originals/67/ba/d0/67bad059a577cf2dd2faf6f06abaf6e1.png');
+  background-size: cover;
+  margin: 0px auto;
+}
+
+.details-text {
+  height: max-content;
+  padding: .1em;
+  margin: .5em;
+  font-size: 2em;
+}
+
+.blogs-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.blogs-header {
+  background-color: #3F51B5;
+  color: white
+}
+

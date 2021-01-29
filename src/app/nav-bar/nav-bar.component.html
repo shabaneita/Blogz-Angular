@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span>Home</span>
+  <span class="spacer"></span>
+  <span class="search">
+    <mat-form-field class="example-form-field">
+      <input matInput type="text" [(ngModel)]="value" placeholder="Search">
+      <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+  </span>
+  <span class="spacer"></span>
+  <button mat-button>Login <mat-icon>login</mat-icon></button>
+  <button mat-button>Register <mat-icon>account_box</mat-icon></button>
+</mat-toolbar>

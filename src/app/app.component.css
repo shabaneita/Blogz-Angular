@@ -1,0 +1,14 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 .1px 10px 1px black;
+}
+
+.nav app-nav-bar {
+  width: 100%;
+}
+
+.content {
+  margin-top: 8em;
+}
