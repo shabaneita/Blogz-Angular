@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from "@angular/material/button";
+import { BlogListComponent } from './blog-list/blog-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlogDetailsComponent
+    BlogDetailsComponent,
+    BlogListComponent
   ],
   imports: [
     BrowserModule,
