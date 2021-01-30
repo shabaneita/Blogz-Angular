@@ -1,10 +1,10 @@
-<div class="container p-0" @fade>
+<div class="container p-0">
   <div class="details-container container p-0 m-0">
-    <div class="profile-image">
+    <div @fade1 class="profile-image">
     </div>
     <div class="details col-12 m-0">
-      <div class="details-text text-center">AhmedNasr</div>
-      <div class="actions" class="text-center">
+      <div @fade2 class="details-text text-center">AhmedNasr</div>
+      <div @fade2 class="actions" class="text-center">
         <button mat-button class="text-success">
           <mat-icon class="mr-0">article</mat-icon>
           Follow
@@ -14,7 +14,7 @@
           Unfollow
         </button>
       </div>
-      <div class="bio">
+      <div @fade3 class="bio">
         <button mat-button color="accent" class="float-md-right edit">
           <mat-icon class="mr-0">create</mat-icon>
           Edit
@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div class="mt-2 blogs-container pt-2">
+  <div @fade3 class="mt-2 blogs-container pt-2">
     <h1 class="text-center blogs-header">AhmedNasr's Blogs</h1>
     <app-blog-list></app-blog-list>
   </div>

@@ -1,6 +1,6 @@
 import { trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { fadeTrigger } from '../_animations/fade';
+import { fade } from '../_animations/fade';
 import { Blog } from '../_models/blog';
 
 @Component({
@@ -8,7 +8,7 @@ import { Blog } from '../_models/blog';
   templateUrl: './blog-list.component.html',
   styleUrls: ['./blog-list.component.css'],
   animations: [
-    fadeTrigger
+    fade('fade2', 1000)
   ]
 })
 export class BlogListComponent implements OnInit {
